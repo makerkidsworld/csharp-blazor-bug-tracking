@@ -1,7 +1,7 @@
 ﻿@page "/new-bug"
 
 <h3>Add New Bug</h3>
-<EditForm Model="AddBug" onValidSubmit="HandleValidSubmit">
+<EditForm Model="AddBug" OnValidSubmit="HandleValidSubmit">
     <DataAnnotationsValidator></DataAnnotationsValidator>
     <InputText @bind-Value="@AddBug.Title" placeholder="Enter Title"></InputText> 
     <InputText @bind-Value="@AddBug.Description" placeholder="Enter Description"></InputText>
